@@ -204,7 +204,8 @@ form textarea
 #menu
 {
 	text-align: center;
-	margin-bottom: 2.5em;
+	margin-bottom: 3em;  /* THIS CREATES SPACE */
+	padding-top: 0.5em;
 }
 
 #menu ul
@@ -301,8 +302,9 @@ form textarea
 
 #logo
 {
-	padding: 0;
 	text-align: center;
+	padding: 0;
+	margin-top: 1em;
 }
 
 #logo h1
@@ -525,13 +527,24 @@ form textarea
 	}
 
 	#menu li
-	{
-		display: block;
-		margin: 0;
-		border-bottom: 1px solid rgba(255,255,255,0.08);
+{
+	display: inline-block;
+	position: relative;
+	margin: 0 0.4em;
+}
 	}
 
-	#menu li a,
+	#menu li a
+{
+	display: inline-block;
+	padding: 0.9em 1.4em;
+	font-size: 0.85em;
+	letter-spacing: 0.08em;
+	font-weight: 600;
+	color: #fff;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
 	#menu li span
 	{
 		display: block;
@@ -539,18 +552,19 @@ form textarea
 	}
 
 	.submenu
-	{
-		position: static;
-		left: auto;
-		top: auto;
-		transform: none;
-		min-width: 100%;
-		width: 100%;
-		box-shadow: none;
-		border-radius: 0;
-		background: rgba(0,0,0,0.15);
-		padding: 0;
-	}
+{
+	display: none;
+	position: absolute;
+	top: 115%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(30, 30, 30, 0.95);
+	min-width: 200px;
+	padding: 0.4em 0;
+	border-radius: 6px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+	z-index: 999;
+}
 
 	#logo h1
 	{
