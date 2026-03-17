@@ -71,6 +71,24 @@ a:hover
 	margin-bottom: 2em;
 }
 
+.image-left
+{
+	float: left;
+	margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+	margin: 0 auto;
+	width: auto;
+}
+
 /**************************************************************/
 /* Lists */
 /**************************************************************/
@@ -204,7 +222,7 @@ form textarea
 #menu
 {
 	text-align: center;
-	margin-bottom: 3em;  /* THIS CREATES SPACE */
+	margin-bottom: 2.5em;
 	padding-top: 0.5em;
 }
 
@@ -216,7 +234,6 @@ form textarea
 #menu li
 {
 	display: inline-block;
-	position: relative;
 	margin: 0 0.35em;
 }
 
@@ -248,63 +265,13 @@ form textarea
 }
 
 /**************************************************************/
-/* Dropdown Menu */
-/**************************************************************/
-
-.submenu
-{
-	display: none;
-	position: absolute;
-	top: 120%;
-	left: 50%;
-	transform: translateX(-50%);
-	background: rgba(32, 32, 32, 0.96);
-	min-width: 210px;
-	padding: 0.4em 0;
-	border-radius: 6px;
-	box-shadow: 0 8px 22px rgba(0,0,0,0.22);
-	z-index: 999;
-}
-
-.submenu li
-{
-	display: block;
-	width: 100%;
-	margin: 0;
-}
-
-.submenu li a
-{
-	display: block;
-	padding: 0.85em 1em;
-	background: transparent;
-	color: #FFFFFF;
-	text-align: center;
-	border-radius: 0;
-	font-size: 0.86em;
-	letter-spacing: 0.08em;
-}
-
-.submenu li a:hover
-{
-	background: #e97874;
-	color: #FFFFFF;
-}
-
-.dropdown:hover .submenu
-{
-	display: block;
-}
-
-/**************************************************************/
 /* Logo */
 /**************************************************************/
 
 #logo
 {
-	text-align: center;
 	padding: 0;
-	margin-top: 1em;
+	text-align: center;
 }
 
 #logo h1
@@ -327,7 +294,6 @@ form textarea
 {
 	display: block;
 	letter-spacing: 0.06em;
-	text-transform: none;
 	font-size: 1.05em;
 	color: rgba(255,255,255,0.90);
 }
@@ -353,6 +319,13 @@ form textarea
 	overflow: hidden;
 	background: #FFFFFF;
 	padding: 4em 0;
+}
+
+#wrapper4
+{
+	overflow: hidden;
+	padding: 8em 0;
+	background: #E74E59;
 }
 
 /**************************************************************/
@@ -465,6 +438,16 @@ form textarea
 	width: 300px;
 }
 
+#lbox1
+{
+	margin-bottom: 5em;
+}
+
+#lbox2
+{
+	margin-bottom: 5em;
+}
+
 #list h2
 {
 	text-transform: uppercase;
@@ -475,6 +458,20 @@ form textarea
 
 /**************************************************************/
 /* Footer */
+/**************************************************************/
+
+#footer
+{
+	text-align: center;
+}
+
+#footer .title span
+{
+	color: rgba(255,255,255,0.4);
+}
+
+/**************************************************************/
+/* Copyright */
 /**************************************************************/
 
 #copyright
@@ -498,6 +495,83 @@ form textarea
 {
 	text-decoration: none;
 	color: rgba(255,255,255,.7);
+}
+
+/**************************************************************/
+/* Newsletter / Contact */
+/**************************************************************/
+
+#newsletter
+{
+	overflow: hidden;
+	padding: 4em 0;
+	background: #EDEDED;
+	text-align: center;
+}
+
+#newsletter .title h2
+{
+	color: rgba(0,0,0,0.8);
+}
+
+#newsletter .content
+{
+	width: 600px;
+	margin: 0 auto;
+}
+
+/**************************************************************/
+/* Portfolio */
+/**************************************************************/
+
+#portfolio
+{
+}
+
+#portfolio .box
+{
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+}
+
+#portfolio h3
+{
+	display: block;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: rgba(0,0,0,0.6);
+}
+
+#portfolio .title
+{
+	text-align: center;
+}
+
+#portfolio .title h2
+{
+	color: rgba(0,0,0,0.8);
+}
+
+.column1,
+.column2,
+.column3,
+.column4
+{
+	width: 282px;
+}
+
+.column1,
+.column2,
+.column3
+{
+	float: left;
+	margin-right: 24px;
+}
+
+.column4
+{
+	float: right;
 }
 
 /**************************************************************/
@@ -527,44 +601,18 @@ form textarea
 	}
 
 	#menu li
-{
-	display: inline-block;
-	position: relative;
-	margin: 0 0.4em;
-}
+	{
+		display: block;
+		margin: 0;
+		border-bottom: 1px solid rgba(255,255,255,0.08);
 	}
 
-	#menu li a
-{
-	display: inline-block;
-	padding: 0.9em 1.4em;
-	font-size: 0.85em;
-	letter-spacing: 0.08em;
-	font-weight: 600;
-	color: #fff;
-	border-radius: 4px;
-	transition: all 0.3s ease;
-}
+	#menu li a,
 	#menu li span
 	{
 		display: block;
 		padding: 1em;
 	}
-
-	.submenu
-{
-	display: none;
-	position: absolute;
-	top: 115%;
-	left: 50%;
-	transform: translateX(-50%);
-	background: rgba(30, 30, 30, 0.95);
-	min-width: 200px;
-	padding: 0.4em 0;
-	border-radius: 6px;
-	box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-	z-index: 999;
-}
 
 	#logo h1
 	{
@@ -593,5 +641,26 @@ form textarea
 		width: 100%;
 		float: none;
 		margin-top: 2em;
+	}
+
+	.column1,
+	.column2,
+	.column3,
+	.column4
+	{
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 2em;
+	}
+
+	#newsletter .content
+	{
+		width: 100%;
+	}
+
+	.image-full
+	{
+		margin-bottom: 1.5em;
 	}
 }
